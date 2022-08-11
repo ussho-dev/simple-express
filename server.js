@@ -8,10 +8,8 @@ const fs = require("fs");
 const moment = require("moment");
 require("dotenv").config();
 
-// Constants
-const PORT = 5000;
+const PORT = 3000;
 
-// App
 const app = express();
 
 app.use(express.json());
@@ -25,10 +23,16 @@ app.get("/", (req, res) => {
 
 app.get("/pdf", async (req, res) => {
   try {
-    const response = await axios.get(
-      "https://web-converter.herokuapp.com/url-to-pdf?url=https://mauju-invoice-staging.herokuapp.com/pdf/iT5u5sQgcv",
+    const response = await axios.post(
+      `${process.env.API_URL}/url-to-pdf`,
       {
-        headers: { "Content-Type": "application/pdf" },
+        url: "https://mauju-invoice-staging.herokuapp.com/pdf/iT5u5sQgcv",
+      },
+      {
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/pdf",
+        },
         responseType: "arraybuffer",
       }
     );
@@ -60,12 +64,15 @@ app.get("/png", async (req, res) => {
     });
 
     const response = await axios.post(
-      `https://web-converter.herokuapp.com/html-to-png`,
+      `${process.env.API_URL}/html-to-png`,
       {
         html,
       },
       {
-        headers: { "Accept": "image/png" },
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "image/png",
+        },
         responseType: "arraybuffer",
       }
     );
