@@ -4,6 +4,13 @@ This is a simple node-express project for testing environment on vps hosting hos
 ## How to install locally
 
 ```
+git clone https://github.com/ussho-dev/simple-express.git
+cd simple-express
 npm install
-node index.js
 ```
+
+## How to run locally
+
+```npm start``` or ```node server.js```
+
+
