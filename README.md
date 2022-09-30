@@ -13,4 +13,13 @@ npm install
 
 ```npm start``` or ```node server.js```
 
+Then access http://localhost:3000
 
+## How to run with docker
+
+```
+docker build . -t simple-express
+docker run -p 3000:3000 simple-express
+```
+
+Then access http://localhost:3000
