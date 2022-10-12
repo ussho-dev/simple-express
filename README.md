@@ -3,7 +3,7 @@ This is a simple node-express project for testing environment on vps hosting hos
 
 Ini adalah proyek node-express sederhana untuk menguji lingkungan di vps hosting hostinger dengan buruh pelabuhan
 
-## How to install locally
+## How to install locally (Cara install di local)
 
 ```
 git clone https://github.com/ussho-dev/simple-express.git
