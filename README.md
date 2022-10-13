@@ -17,11 +17,11 @@ npm install
 
 Then access http://localhost:3000
 
-## How to run with docker
+## How to run with docker (Cara menjalankan dengan docker)
 
 ```
 docker build . -t simple-express
 docker run -p 3000:3000 simple-express
 ```
 
-Then access http://localhost:3000
+Then access (Kemudian aksess) => http://localhost:3000
