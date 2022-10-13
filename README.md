@@ -11,7 +11,7 @@ cd simple-express
 npm install
 ```
 
-## How to run locally
+## How to run locally (Cara menjalankan di local)
 
 ```npm start``` or ```node server.js```
 
