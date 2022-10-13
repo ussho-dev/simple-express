@@ -11,17 +11,17 @@ cd simple-express
 npm install
 ```
 
-## How to run locally
+## How to run locally (Cara menjalankan di local)
 
 ```npm start``` or ```node server.js```
 
 Then access http://localhost:3000
 
-## How to run with docker
+## How to run with docker (Cara menjalankan dengan docker)
 
 ```
 docker build . -t simple-express
 docker run -p 3000:3000 simple-express
 ```
 
-Then access http://localhost:3000
+Then access (Kemudian aksess) => http://localhost:3000
