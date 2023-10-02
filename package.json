@@ -4,7 +4,7 @@
   "description": "Node.js on Docker",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node src/server.js"
   },
   "author": "mauju",
   "license": "ISC",
