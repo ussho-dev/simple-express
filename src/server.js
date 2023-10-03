@@ -1,5 +1,3 @@
-"use strict";
-
 const express = require("express");
 const axios = require("axios");
 const handlebars = require("handlebars");
